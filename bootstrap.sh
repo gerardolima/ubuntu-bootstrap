@@ -24,3 +24,9 @@ git config --global user.name "$GIT_USER_NAME"
 git config --global user.email "$GIT_USER_EMAIL"
 git config --global alias.s "status"
 git config --global alias.l "log -n 5"
+
+# ssh-key - https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+# -------
+ssh-keygen -t rsa -b 4096 -C "$GIT_USER_EMAIL" -N "" -f "~/.ssh/id_rsa"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
