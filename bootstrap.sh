@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set $GIT_USER_NAME = yout-user-name-here
+set $GIT_USER_EMAIL = your-email-here
+
 # minimal
 # -------
 sudo apt-get install neovim curl
@@ -13,3 +16,11 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install code
+
+# git - https://git-scm.com/download/linux
+# ----
+sudo apt-get install git
+git config --global user.name "$GIT_USER_NAME"
+git config --global user.email "$GIT_USER_EMAIL"
+git config --global alias.s "status"
+git config --global alias.l "log -n 5"
