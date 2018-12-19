@@ -5,7 +5,7 @@ set $GIT_USER_EMAIL = your-email-here
 
 # minimal
 # -------
-sudo apt-get install neovim curl
+sudo apt-get install neovim curl pm-utils
 
 # vscode - https://code.visualstudio.com/docs/setup/linux
 # ------
