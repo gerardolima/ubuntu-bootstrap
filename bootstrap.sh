@@ -20,10 +20,9 @@ sudo apt-get install code
 # git - https://git-scm.com/download/linux
 # ----
 sudo apt-get install git
+cp .gitconfig ~/
 git config --global user.name "$GIT_USER_NAME"
 git config --global user.email "$GIT_USER_EMAIL"
-git config --global alias.s "status"
-git config --global alias.l "log -n 5"
 
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.bash_git
 

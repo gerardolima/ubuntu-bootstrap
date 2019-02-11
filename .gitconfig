@@ -1,0 +1,5 @@
+[alias]
+	s = status --short --branch
+	l = log --oneline --graph
+	d = "!f() { git diff ${@}  -- ':!package-lock.json' ':!yarn.lock'; }; f"
+
